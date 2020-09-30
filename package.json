@@ -1,0 +1,48 @@
+{
+  "name": "gatsby-blog-typescript",
+  "private": true,
+  "description": "Starter site for a simple Gatsby blog with TypeScript",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js src",
+    "lint:fix": "npm run lint -- --fix",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.65",
+    "gatsby-plugin-manifest": "^2.4.32",
+    "gatsby-plugin-offline": "^3.2.29",
+    "gatsby-plugin-react-helmet": "^3.3.12",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.11",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/markfknight/gatsby-blog-typescript"
+  },
+  "bugs": {
+    "url": "https://https://github.com/markfknight/gatsby-blog-typescript/issues"
+  }
+}
