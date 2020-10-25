@@ -15,7 +15,7 @@ type SeoProps = {
   description?: string;
 };
 
-type query = {
+type Data = {
   site: {
     siteMetadata: {
       title: string;
@@ -25,22 +25,9 @@ type query = {
   };
 };
 
-const SEO: React.FC<SeoProps> = (props) => {
-  const { site }: query = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  );
-
-  const metaDescription = props.description || site.siteMetadata.description;
+export const PureSEO: React.FC<SeoProps & { data: Data }> = (props) => {
+  const metaDescription =
+    props.description || props.data.site.siteMetadata.description;
   const lang = props.lang || `en`;
   const meta = props.meta || [];
   const keywords = props.keywords || [];
@@ -52,7 +39,7 @@ const SEO: React.FC<SeoProps> = (props) => {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${props.data.site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -76,7 +63,7 @@ const SEO: React.FC<SeoProps> = (props) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: props.data.site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -97,4 +84,22 @@ const SEO: React.FC<SeoProps> = (props) => {
   );
 };
 
-export default SEO;
+export const SEO: React.FC<SeoProps> = (props) => {
+  const data: Data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
+        }
+      }
+    `
+  );
+  return <PureSEO {...props} data={data}></PureSEO>;
+};
+
+// export default SEO;
+// export PureSEO;

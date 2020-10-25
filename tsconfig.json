@@ -3,11 +3,11 @@
         "./src/**/*"
     ],
     "compilerOptions": {
-      "target": "esnext",
-      "module": "esnext",
+      "target": "es2019",
+      "module": "commonjs",
       "lib": [
           "dom",
-          "es2018"
+          "es2019"
         ],
       // "allowJs": true,
       // "checkJs": true,
