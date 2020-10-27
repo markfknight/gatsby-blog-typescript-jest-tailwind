@@ -1,5 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import { Helmet } from 'react-helmet';
 
 import { PureSEO } from './seo';
 
@@ -14,7 +15,10 @@ describe(`SEO snapshot`, () => {
         },
       },
     };
-    const tree = renderer.create(<PureSEO title="Test" data={data} />).toJSON();
-    expect(tree).toMatchSnapshot();
+
+    const wrapper = render(<PureSEO title="Test" data={data} />);
+    const helmet = Helmet.peek();
+    expect(helmet.title).toEqual(`Test | Your Title`);
+    wrapper.unmount();
   });
 });
