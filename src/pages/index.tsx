@@ -1,6 +1,7 @@
 import { graphql, PageProps } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
+import { PostList } from '../components/post-list';
 import { SEO } from '../components/seo';
 
 type Data = {
@@ -18,7 +19,7 @@ const Home: React.FC<PageProps<Data>> = (props) => {
   return (
     <Layout location={props.location} title={title}>
       <SEO title="Home" />
-      <div>Hello world!</div>
+      <PostList></PostList>
     </Layout>
   );
 };
