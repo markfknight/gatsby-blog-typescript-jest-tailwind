@@ -19,7 +19,6 @@ exports[`Blog Post snapshot renders correctly 1`] = `
     </h3>
   </header>
   <main>
-    <div />
     <article>
       <header>
         <h1>

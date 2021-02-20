@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Helmet } from 'react-helmet';
 
-import { PureSEO } from './seo';
+import { PureSEO } from '../seo';
 
 describe(`SEO snapshot`, () => {
   it(`renders correctly`, () => {

@@ -1,12 +1,8 @@
 import React, { PropsWithChildren } from 'react';
 import renderer from 'react-test-renderer';
-import BlogPost, { BlogPostProps } from './blog-post';
+import BlogPost, { BlogPostProps } from '../blog-post';
 
-jest.mock(`../components/seo`, () => {
-  return {
-    SEO: () => <div></div>,
-  };
-});
+jest.mock(`../../components/seo`);
 
 describe(`Blog Post snapshot`, () => {
   it(`renders correctly`, () => {

@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import renderer from 'react-test-renderer';
 
-import Layout, { LayoutProps } from './layout';
+import Layout, { LayoutProps } from '../layout';
 
 describe(`Layout snapshot`, () => {
   it(`renders correctly when root pathname`, () => {
