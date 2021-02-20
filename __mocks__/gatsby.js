@@ -1,7 +1,7 @@
-import { createElement } from 'react';
-const gatsby = jest.requireActual(`gatsby`);
+const React = require('react');
+const gatsby = jest.requireActual('gatsby');
 
-export default {
+module.exports = {
   ...gatsby,
   graphql: jest.fn(),
   Link: jest.fn().mockImplementation(
@@ -17,7 +17,7 @@ export default {
       to,
       ...rest
     }) =>
-      createElement(`a`, {
+      React.createElement('a', {
         ...rest,
         href: to,
       })
