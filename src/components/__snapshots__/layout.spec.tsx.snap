@@ -1,9 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout snapshot renders correctly 1`] = `
+exports[`Layout snapshot renders correctly when not root pathname 1`] = `
 <div>
-  <p>
-    Test
-  </p>
+  <header>
+    <h3>
+      <a
+        href="/"
+        style={
+          Object {
+            "boxShadow": "none",
+            "color": "inherit",
+            "textDecoration": "none",
+          }
+        }
+      >
+        test
+      </a>
+    </h3>
+  </header>
+  <main>
+    <p>
+      Test
+    </p>
+  </main>
+  <footer>
+    © 
+    2021
+    , Built with
+     
+    <a
+      href="https://www.gatsbyjs.org"
+    >
+      Gatsby
+    </a>
+  </footer>
+</div>
+`;
+
+exports[`Layout snapshot renders correctly when root pathname 1`] = `
+<div>
+  <header>
+    <h1>
+      <a
+        href="/"
+        style={
+          Object {
+            "boxShadow": "none",
+            "color": "inherit",
+            "textDecoration": "none",
+          }
+        }
+      >
+        test
+      </a>
+    </h1>
+  </header>
+  <main>
+    <p>
+      Test
+    </p>
+  </main>
+  <footer>
+    © 
+    2021
+    , Built with
+     
+    <a
+      href="https://www.gatsbyjs.org"
+    >
+      Gatsby
+    </a>
+  </footer>
 </div>
 `;

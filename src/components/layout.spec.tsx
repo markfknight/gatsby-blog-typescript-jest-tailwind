@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import renderer from 'react-test-renderer';
 
-import Layout from './layout';
+import Layout, { LayoutProps } from './layout';
 
 describe(`Layout snapshot`, () => {
-  it(`renders correctly`, () => {
+  it(`renders correctly when root pathname`, () => {
+    const props = {
+      title: `test`,
+      location: {
+        pathname: `/`,
+      },
+    } as PropsWithChildren<LayoutProps>;
+
     const tree = renderer
       .create(
-        <Layout>
+        <Layout {...props}>
+          <p>Test</p>
+        </Layout>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it(`renders correctly when not root pathname`, () => {
+    const props = {
+      title: `test`,
+      location: {
+        pathname: ``,
+      },
+    } as PropsWithChildren<LayoutProps>;
+
+    const tree = renderer
+      .create(
+        <Layout {...props}>
           <p>Test</p>
         </Layout>
       )

@@ -1,6 +1,7 @@
 import { Link, PageRendererProps } from 'gatsby';
 import React, { PropsWithChildren } from 'react';
-type LayoutProps = PageRendererProps & { title: string };
+
+export type LayoutProps = PageRendererProps & { title: string };
 
 const Layout: React.FC<PropsWithChildren<LayoutProps>> = (props) => {
   const { location, title, children } = props;
