@@ -3,12 +3,12 @@ import React from 'react';
 import Layout from '../components/layout';
 import { SEO } from '../components/seo';
 
-type BlogPostProps = PageProps<
-  Data,
+export type BlogPostProps = PageProps<
+  BlogPostData,
   { previous: MarkdownRemark; next: MarkdownRemark }
 >;
 
-type MarkdownRemark = {
+export type MarkdownRemark = {
   id: string;
   excerpt: string;
   html: string;
@@ -21,7 +21,7 @@ type MarkdownRemark = {
   };
 };
 
-type Data = {
+export type BlogPostData = {
   site: {
     siteMetadata: {
       title: string;

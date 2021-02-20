@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Post snapshot renders correctly 1`] = `
+<div>
+  <header>
+    <h3>
+      <a
+        href="/"
+        style={
+          Object {
+            "boxShadow": "none",
+            "color": "inherit",
+            "textDecoration": "none",
+          }
+        }
+      >
+        
+      </a>
+    </h3>
+  </header>
+  <main>
+    <div />
+    <article>
+      <header>
+        <h1>
+          
+        </h1>
+        <p>
+          
+        </p>
+      </header>
+      <section
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "",
+          }
+        }
+      />
+      <footer />
+    </article>
+    <nav>
+      <ul
+        style={
+          Object {
+            "display": "flex",
+            "flexWrap": "wrap",
+            "justifyContent": "space-between",
+            "listStyle": "none",
+            "padding": 0,
+          }
+        }
+      >
+        <li>
+          <a
+            href=""
+            rel="prev"
+            style={
+              Object {
+                "boxShadow": "none",
+                "color": "inherit",
+                "textDecoration": "none",
+              }
+            }
+          >
+            ← 
+            
+          </a>
+        </li>
+        <li>
+          <a
+            href=""
+            rel="next"
+            style={
+              Object {
+                "boxShadow": "none",
+                "color": "inherit",
+                "textDecoration": "none",
+              }
+            }
+          >
+            
+             →
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+  <footer>
+    © 
+    2021
+    , Built with
+     
+    <a
+      href="https://www.gatsbyjs.org"
+    >
+      Gatsby
+    </a>
+  </footer>
+</div>
+`;
