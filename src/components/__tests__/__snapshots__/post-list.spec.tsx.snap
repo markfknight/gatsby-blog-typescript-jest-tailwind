@@ -5,25 +5,55 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h4>
-        1
-         Posts
-      </h4>
-      <article>
+      <div
+        class="space-y-8"
+      >
+        <article
+          class="p-4 flow-root rounded-sm shadow-md space-x-2"
+        >
+          <header>
+            <h2>
+              <a
+                href="slug"
+              >
+                title
+              </a>
+            </h2>
+            <span
+              class="text-gray-500"
+            >
+              2021-01-01
+            </span>
+          </header>
+          <section>
+            <p>
+              excerpt
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="space-y-8"
+    >
+      <article
+        class="p-4 flow-root rounded-sm shadow-md space-x-2"
+      >
         <header>
-          <h3>
+          <h2>
             <a
               href="slug"
-              style="box-shadow: none; text-decoration: none;"
             >
               title
-               
-              <span>
-                — 
-                2021-01-01
-              </span>
             </a>
-          </h3>
+          </h2>
+          <span
+            class="text-gray-500"
+          >
+            2021-01-01
+          </span>
         </header>
         <section>
           <p>
@@ -32,34 +62,6 @@ Object {
         </section>
       </article>
     </div>
-  </body>,
-  "container": <div>
-    <h4>
-      1
-       Posts
-    </h4>
-    <article>
-      <header>
-        <h3>
-          <a
-            href="slug"
-            style="box-shadow: none; text-decoration: none;"
-          >
-            title
-             
-            <span>
-              — 
-              2021-01-01
-            </span>
-          </a>
-        </h3>
-      </header>
-      <section>
-        <p>
-          excerpt
-        </p>
-      </section>
-    </article>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

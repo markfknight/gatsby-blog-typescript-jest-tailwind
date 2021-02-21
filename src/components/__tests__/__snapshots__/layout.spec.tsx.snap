@@ -5,12 +5,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <header>
+      <div
+        class="container max-w-3xl px4 py10"
+      >
+        <header
+          class="py-10"
+        >
           <h3>
             <a
               href="/"
-              style="box-shadow: none; text-decoration: none;"
             >
               test
             </a>
@@ -21,7 +24,9 @@ Object {
             Test
           </p>
         </main>
-        <footer>
+        <footer
+          class="py-10 text-center"
+        >
           © 
           2021
           , Built with
@@ -36,12 +41,15 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
-      <header>
+    <div
+      class="container max-w-3xl px4 py10"
+    >
+      <header
+        class="py-10"
+      >
         <h3>
           <a
             href="/"
-            style="box-shadow: none; text-decoration: none;"
           >
             test
           </a>
@@ -52,7 +60,9 @@ Object {
           Test
         </p>
       </main>
-      <footer>
+      <footer
+        class="py-10 text-center"
+      >
         © 
         2021
         , Built with
@@ -124,12 +134,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <header>
+      <div
+        class="container max-w-3xl px4 py10"
+      >
+        <header
+          class="py-10"
+        >
           <h1>
             <a
               href="/"
-              style="box-shadow: none; text-decoration: none;"
             >
               test
             </a>
@@ -140,7 +153,9 @@ Object {
             Test
           </p>
         </main>
-        <footer>
+        <footer
+          class="py-10 text-center"
+        >
           © 
           2021
           , Built with
@@ -155,12 +170,15 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
-      <header>
+    <div
+      class="container max-w-3xl px4 py10"
+    >
+      <header
+        class="py-10"
+      >
         <h1>
           <a
             href="/"
-            style="box-shadow: none; text-decoration: none;"
           >
             test
           </a>
@@ -171,7 +189,9 @@ Object {
           Test
         </p>
       </main>
-      <footer>
+      <footer
+        class="py-10 text-center"
+      >
         © 
         2021
         , Built with

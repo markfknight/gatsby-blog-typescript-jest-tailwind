@@ -1,7 +1,7 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-type PostListData = {
+export type PostListData = {
   allMarkdownRemark: {
     totalCount: number;
     edges: [
@@ -30,28 +30,24 @@ export const PurePostList: React.FC<PostListProps & { data: PostListData }> = (
   props
 ) => (
   <>
-    <h4>{props.data.allMarkdownRemark.totalCount} Posts</h4>
-    {props.data.allMarkdownRemark.edges.map(({ node }) => (
-      <article key={node.id}>
-        <header>
-          <h3>
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={node.fields.slug}
-            >
-              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-            </Link>
-          </h3>
-        </header>
-        <section>
-          <p>{node.excerpt}</p>
-        </section>
-      </article>
-    ))}
+    <div className="space-y-8">
+      {props.data.allMarkdownRemark.edges.map(({ node }) => (
+        <article
+          className="p-4 flow-root rounded-sm shadow-md space-x-2"
+          key={node.id}
+        >
+          <header>
+            <h2>
+              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            </h2>
+            <span className="text-gray-500">{node.frontmatter.date}</span>
+          </header>
+          <section>
+            <p>{node.excerpt}</p>
+          </section>
+        </article>
+      ))}
+    </div>
   </>
 );
 
