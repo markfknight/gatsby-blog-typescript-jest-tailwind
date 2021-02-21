@@ -24,10 +24,11 @@ type PostListData = {
 
 export type PostListProps = {
   title?: string;
-  data: PostListData;
 };
 
-export const PurePostList: React.FC<PostListProps> = (props) => (
+export const PurePostList: React.FC<PostListProps & { data: PostListData }> = (
+  props
+) => (
   <>
     <h4>{props.data.allMarkdownRemark.totalCount} Posts</h4>
     {props.data.allMarkdownRemark.edges.map(({ node }) => (
