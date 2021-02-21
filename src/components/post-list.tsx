@@ -1,11 +1,7 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-type PostProps = {
-  title?: string;
-};
-
-type Data = {
+type PostListData = {
   allMarkdownRemark: {
     totalCount: number;
     edges: [
@@ -26,7 +22,12 @@ type Data = {
   };
 };
 
-export const PurePostList: React.FC<PostProps & { data: Data }> = (props) => (
+export type PostListProps = {
+  title?: string;
+  data: PostListData;
+};
+
+export const PurePostList: React.FC<PostListProps> = (props) => (
   <>
     <h4>{props.data.allMarkdownRemark.totalCount} Posts</h4>
     {props.data.allMarkdownRemark.edges.map(({ node }) => (
@@ -53,8 +54,8 @@ export const PurePostList: React.FC<PostProps & { data: Data }> = (props) => (
   </>
 );
 
-export const PostList: React.FC<PostProps> = (props) => {
-  const data: Data = useStaticQuery(
+export const PostList: React.FC<PostListProps> = (props) => {
+  const data: PostListData = useStaticQuery(
     graphql`
       query {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
