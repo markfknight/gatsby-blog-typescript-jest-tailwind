@@ -39,12 +39,15 @@ const BlogPost: React.FC<BlogPostProps> = (props) => {
   return (
     <Layout location={props.location} title={siteMetadata.title}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
-      <article>
+      <article className="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
         <header>
           <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p className="text-gray-500">{post.frontmatter.date}</p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          className="text-justify"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <footer></footer>
       </article>
       <nav>

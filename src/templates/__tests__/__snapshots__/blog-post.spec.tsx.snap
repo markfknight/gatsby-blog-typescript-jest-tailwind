@@ -5,22 +5,31 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <header>
+      <div
+        class="container max-w-3xl px4 py10"
+      >
+        <header
+          class="py-10"
+        >
           <h3>
             <a
               href="/"
-              style="box-shadow: none; text-decoration: none;"
             />
           </h3>
         </header>
         <main>
-          <article>
+          <article
+            class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+          >
             <header>
               <h1 />
-              <p />
+              <p
+                class="text-gray-500"
+              />
             </header>
-            <section />
+            <section
+              class="text-justify"
+            />
             <footer />
           </article>
           <nav>
@@ -50,7 +59,9 @@ Object {
             </ul>
           </nav>
         </main>
-        <footer>
+        <footer
+          class="py-10 text-center"
+        >
           © 
           2021
           , Built with
@@ -65,22 +76,31 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <div>
-      <header>
+    <div
+      class="container max-w-3xl px4 py10"
+    >
+      <header
+        class="py-10"
+      >
         <h3>
           <a
             href="/"
-            style="box-shadow: none; text-decoration: none;"
           />
         </h3>
       </header>
       <main>
-        <article>
+        <article
+          class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+        >
           <header>
             <h1 />
-            <p />
+            <p
+              class="text-gray-500"
+            />
           </header>
-          <section />
+          <section
+            class="text-justify"
+          />
           <footer />
         </article>
         <nav>
@@ -110,7 +130,9 @@ Object {
           </ul>
         </nav>
       </main>
-      <footer>
+      <footer
+        class="py-10 text-center"
+      >
         © 
         2021
         , Built with

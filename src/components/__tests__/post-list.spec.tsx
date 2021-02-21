@@ -1,13 +1,13 @@
 import React, { PropsWithChildren } from 'react';
 import { cleanup, render } from '@testing-library/react';
 
-import { PostListProps, PurePostList } from '../post-list';
+import { PostListProps, PostListData, PurePostList } from '../post-list';
 
 afterEach(cleanup);
 
 describe(`Post List snapshot`, () => {
   it(`renders correctly`, () => {
-    const props: PropsWithChildren<PostListProps> = {
+    const props: PropsWithChildren<PostListProps & { data: PostListData }> = {
       data: {
         allMarkdownRemark: {
           totalCount: 1,
