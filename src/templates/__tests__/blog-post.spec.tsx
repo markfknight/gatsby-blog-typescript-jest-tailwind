@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+
 import BlogPost, { BlogPostProps } from '../blog-post';
 
 jest.mock(`../../components/seo`);
@@ -56,7 +57,7 @@ describe(`Blog Post snapshot`, () => {
         },
       },
     } as PropsWithChildren<BlogPostProps>;
-    const tree = renderer.create(<BlogPost {...props} />).toJSON();
+    const tree = render(<BlogPost {...props} />);
     expect(tree).toMatchSnapshot();
   });
 });

@@ -1,7 +1,9 @@
 import React, { PropsWithChildren } from 'react';
-import renderer from 'react-test-renderer';
+import { cleanup, render } from '@testing-library/react';
 
 import Layout, { LayoutProps } from '../layout';
+
+afterEach(cleanup);
 
 describe(`Layout snapshot`, () => {
   it(`renders correctly when root pathname`, () => {
@@ -12,13 +14,11 @@ describe(`Layout snapshot`, () => {
       },
     } as PropsWithChildren<LayoutProps>;
 
-    const tree = renderer
-      .create(
-        <Layout {...props}>
-          <p>Test</p>
-        </Layout>
-      )
-      .toJSON();
+    const tree = render(
+      <Layout {...props}>
+        <p>Test</p>
+      </Layout>
+    );
     expect(tree).toMatchSnapshot();
   });
 
@@ -30,13 +30,11 @@ describe(`Layout snapshot`, () => {
       },
     } as PropsWithChildren<LayoutProps>;
 
-    const tree = renderer
-      .create(
-        <Layout {...props}>
-          <p>Test</p>
-        </Layout>
-      )
-      .toJSON();
+    const tree = render(
+      <Layout {...props}>
+        <p>Test</p>
+      </Layout>
+    );
     expect(tree).toMatchSnapshot();
   });
 });
