@@ -1,5 +1,8 @@
-const React = require('react');
-const gatsby = jest.requireActual('gatsby');
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-undef */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const React = require(`react`);
+const gatsby = jest.requireActual(`gatsby`);
 
 module.exports = {
   ...gatsby,
@@ -17,7 +20,7 @@ module.exports = {
       to,
       ...rest
     }) =>
-      React.createElement('a', {
+      React.createElement(`a`, {
         ...rest,
         href: to,
       })
