@@ -7,15 +7,15 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Gatsby Blog TypeScript`,
-    description: `Gatsby Blog TypeScript Starter for 10`,
+    title: `Gatsby Blog Starter`,
+    description: `Gatsby Blog TypeScript with esLint, prettier, Jest and Tailwind`,
     author: `markfknight`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Blog TypeScript`,
+        name: `Gatsby Blog Starter`,
         short_name: `Blog`,
         start_url: `/`,
         background_color: `#2cbdff`,

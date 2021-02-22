@@ -3,25 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-    body {
+    :root {
         @apply bg-gray-50;
     }
 
     h1 {
-        @apply text-6xl;
-        @apply font-bold;
-        @apply font-sans;
+        @apply text-6xl font-bold font-sans;
     }
 
     h2 {
-        @apply text-3xl;
-        @apply font-bold;
-        @apply font-sans;
+        @apply text-3xl font-bold font-sans;
     }
 
     h3 {
-        @apply text-2xl;
-        @apply font-bold;
-        @apply font-sans;
+        @apply text-2xl font-bold font-sans;
+    }
+
+    h4 {
+        @apply text-2xl font-bold font-sans;
     }
 }
