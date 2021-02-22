@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import { PostList } from '../components/post-list';
 import { SEO } from '../components/seo';
 
-type Data = {
+export type Data = {
   site: {
     siteMetadata: {
       title: string;
