@@ -49,6 +49,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-smartypants`,
+            options: {
+              dashes: 'oldschool',
+            },
+          },
         ],
       },
     },
