@@ -33,6 +33,7 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -48,9 +49,20 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 620,
+              withWebp: true,
+              wrapperStyle: `margin-bottom: 1.0725rem;`,
+            },
+          },
+          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1.0725rem;`,
             },
           },
           {
