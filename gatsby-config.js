@@ -71,11 +71,13 @@ module.exports = {
               dashes: 'oldschool',
             },
           },
+          `gatsby-remark-external-links`,
         ],
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-catch-links`,
   ],
 };

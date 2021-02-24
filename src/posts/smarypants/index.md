@@ -1,5 +1,5 @@
 ---
-title: 'Smartypants (retext)'
+title: 'smartypants (retext)'
 date: '2020-12-03'
 ---
 

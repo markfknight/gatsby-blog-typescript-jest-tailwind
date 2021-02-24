@@ -1,9 +1,9 @@
 ---
-title: 'Reponsive <iframe>'
+title: 'reponsive <iframe>'
 date: '2020-12-02'
 ---
 
-Blog posts have reponsive `<iframe>` support, handy if you want to embed
+Posts have reponsive `<iframe>` support, handy if you want to embed
 [YouTube](https://www.youtube.com/) videos.
 
 <iframe
