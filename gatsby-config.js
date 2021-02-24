@@ -38,9 +38,13 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: `gatsby-remark-vscode`,
             options: {
-              inlineCodeMarker: '>',
+              theme: 'Monokai Operator', // Or install your favorite theme from GitHub
+              extensions: ['monokai-operator-theme'],
+              inlineCode: {
+                marker: '•',
+              },
             },
           },
           {

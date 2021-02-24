@@ -23,3 +23,16 @@
         @apply text-2xl font-bold font-sans;
     }
 }
+
+/* Code line highlight customisation */
+:root {
+    --grvsc-line-highlighted-background-color: #ffffff33;
+    --grvsc-line-highlighted-border-color: #f92672;
+    --grvsc-line-highlighted-border-width: 6px;
+}
+
+/* Inline code highlight adjustment */
+code.monokai-operator {
+    padding: 0 6px;
+    border-radius: var(--grvsc-border-radius, 4px);
+}
