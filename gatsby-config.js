@@ -84,6 +84,14 @@ module.exports = {
         ],
       },
     },
+    // add your brave token and domain to enable [Brave Rewards](https://publishers.basicattentiontoken.org/)
+    // {
+    //   resolve: 'gatsby-plugin-verify-brave',
+    //   options: {
+    //     token: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
+    //     domain: 'test.dev',
+    //   },
+    // },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
