@@ -21,6 +21,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Cache
+      uses: actions/cache@v2.1.4
+      with:
+        # A directory to store and save the cache
+        path: ~/.npm
+        # An explicit key for restoring and saving the cache
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+            ${{ runner.os }}-node-
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
