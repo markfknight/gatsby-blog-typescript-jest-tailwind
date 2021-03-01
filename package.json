@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-blog-typescript",
+  "name": "gatsby-blog-typescript-jest-tailwind",
   "private": true,
   "description": "Starter site for a simple Gatsby blog with TypeScript",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "gatsby"
@@ -60,7 +60,7 @@
     "babel-jest": "^26.6.3",
     "babel-preset-gatsby": "^0.12.1",
     "eslint": "^7.20.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-jest": "^24.1.5",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
@@ -77,9 +77,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://https://github.com/markfknight/gatsby-blog-typescript"
+    "url": "https://github.com/markfknight/gatsby-blog-typescript-jest-tailwind"
   },
   "bugs": {
-    "url": "https://https://github.com/markfknight/gatsby-blog-typescript/issues"
+    "url": "https://github.com/markfknight/gatsby-blog-typescript-jest-tailwind/issues"
   }
 }
