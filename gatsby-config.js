@@ -96,5 +96,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-sitemap`,
   ],
 };
