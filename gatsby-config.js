@@ -9,6 +9,8 @@ module.exports = {
   // [GitHub Pages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)
   pathPrefix: `/gatsby-blog-typescript-jest-tailwind`,
   siteMetadata: {
+    // Add site url here for sitemap generation
+    // siteUrl: "",
     title: `Gatsby Blog Starter`,
     description: `Gatsby Blog TypeScript with esLint, prettier, Jest and Tailwind`,
     author: `markfknight`,
@@ -96,6 +98,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-sitemap`,
+    // Requires siteUrl
+    // `gatsby-plugin-sitemap`,
   ],
 };
