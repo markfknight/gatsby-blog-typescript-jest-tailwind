@@ -23,7 +23,7 @@
     "test:watchAll": "jest --watchAll"
   },
   "dependencies": {
-    "gatsby": "^3.0.2",
+    "gatsby": "^3.0.3",
     "gatsby-plugin-catch-links": "^3.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
