@@ -29,7 +29,7 @@
     "gatsby-plugin-offline": "^4.0.0",
     "gatsby-plugin-react-helmet": "^4.3.0",
     "gatsby-plugin-sharp": "^3.5.0",
-    "gatsby-plugin-sitemap": "^3.0.0",
+    "gatsby-plugin-sitemap": "^4.1.0",
     "gatsby-plugin-verify-brave": "^1.0.5",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "^5.2.0",
