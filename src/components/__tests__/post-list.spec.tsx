@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 
-import { PropsWithChildren } from 'react';
 import { cleanup, render } from '@testing-library/react';
 
 import { PostListProps, PostListData, PurePostList } from '../post-list';
@@ -11,7 +10,7 @@ afterEach(cleanup);
 
 describe(`Post List snapshot`, () => {
   it(`renders correctly`, () => {
-    const props: PropsWithChildren<PostListProps & { data: PostListData }> = {
+    const props: PostListProps & { data: PostListData } = {
       data: {
         allMarkdownRemark: {
           totalCount: 1,

@@ -2,7 +2,7 @@
   "name": "gatsby-blog-typescript-jest-tailwind",
   "private": true,
   "description": "Starter site for a simple Gatsby blog with TypeScript",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "license": "MIT",
   "keywords": [
     "gatsby"

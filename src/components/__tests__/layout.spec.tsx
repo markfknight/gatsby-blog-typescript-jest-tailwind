@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 
-import { PropsWithChildren } from 'react';
 import { cleanup, render } from '@testing-library/react';
 
 import Layout, { LayoutProps } from '../layout';
@@ -16,7 +15,7 @@ describe(`Layout snapshot`, () => {
       location: {
         pathname: `/`,
       },
-    } as PropsWithChildren<LayoutProps>;
+    } as LayoutProps;
 
     const tree = render(
       <Layout {...props}>
@@ -32,7 +31,7 @@ describe(`Layout snapshot`, () => {
       location: {
         pathname: ``,
       },
-    } as PropsWithChildren<LayoutProps>;
+    } as LayoutProps;
 
     const tree = render(
       <Layout {...props}>

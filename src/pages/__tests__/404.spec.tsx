@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 
-import React from 'react';
 import { cleanup, render } from '@testing-library/react';
 
 import NotFoundPage, { Data } from '../404';

@@ -2,7 +2,6 @@
  * @jest-environment jsdom
  */
 
-import React from 'react';
 import { cleanup, render } from '@testing-library/react';
 
 import Home, { Data } from '../index';
