@@ -15,6 +15,7 @@ module.exports = {
     description: `Gatsby Blog TypeScript with esLint, prettier, Jest and Tailwind`,
     author: `markfknight`,
   },
+  jsxRuntime: 'automatic',
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,

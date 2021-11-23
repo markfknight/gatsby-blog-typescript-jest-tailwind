@@ -12,7 +12,7 @@ export type Data = {
   };
 };
 
-const Home: React.FC<PageProps<Data>> = (props) => {
+const Home = (props: PageProps<Data>) => {
   const { data } = props;
   const title = data.site.siteMetadata.title;
 

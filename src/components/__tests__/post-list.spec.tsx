@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import { cleanup, render } from '@testing-library/react';
 
 import { PostListProps, PostListData, PurePostList } from '../post-list';
