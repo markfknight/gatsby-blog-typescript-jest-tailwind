@@ -60,7 +60,7 @@ describe(`Blog Post snapshot`, () => {
         },
       },
     } as BlogPostProps;
-    const tree = render(<BlogPost {...props} />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<BlogPost {...props} />);
+    expect(container).toMatchSnapshot();
   });
 });

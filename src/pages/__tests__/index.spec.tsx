@@ -25,8 +25,8 @@ describe(`Index snapshot`, () => {
       },
     } as PageProps<Data>;
 
-    const tree = render(<Home {...props} />);
+    const { container } = render(<Home {...props} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

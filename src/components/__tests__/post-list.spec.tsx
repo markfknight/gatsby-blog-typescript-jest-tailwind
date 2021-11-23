@@ -33,7 +33,7 @@ describe(`Post List snapshot`, () => {
       },
     };
 
-    const tree = render(<PurePostList {...props} />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<PurePostList {...props} />);
+    expect(container).toMatchSnapshot();
   });
 });

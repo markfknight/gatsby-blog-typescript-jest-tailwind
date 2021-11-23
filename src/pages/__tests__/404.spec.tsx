@@ -24,8 +24,8 @@ describe(`404 snapshot`, () => {
       },
     } as PageProps<Data>;
 
-    const tree = render(<NotFoundPage {...props} />);
+    const { container } = render(<NotFoundPage {...props} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

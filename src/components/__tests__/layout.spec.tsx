@@ -17,12 +17,12 @@ describe(`Layout snapshot`, () => {
       },
     } as LayoutProps;
 
-    const tree = render(
+    const { container } = render(
       <Layout {...props}>
         <p>Test</p>
       </Layout>
     );
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it(`renders correctly when not root pathname`, () => {
@@ -33,11 +33,11 @@ describe(`Layout snapshot`, () => {
       },
     } as LayoutProps;
 
-    const tree = render(
+    const { container } = render(
       <Layout {...props}>
         <p>Test</p>
       </Layout>
     );
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

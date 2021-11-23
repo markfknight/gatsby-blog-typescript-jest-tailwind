@@ -19,6 +19,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
+    "posttest": "npm run lint",
     "test:watch": "jest --watch",
     "test:watchAll": "jest --watchAll"
   },

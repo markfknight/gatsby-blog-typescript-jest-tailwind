@@ -1,5 +1,5 @@
-import React, { ReactElement } from 'react';
+import { ReactNode } from 'react';
 
-const PostList = (): ReactElement => <></>;
+const PostList = (): ReactNode => <></>;
 
 export { PostList };

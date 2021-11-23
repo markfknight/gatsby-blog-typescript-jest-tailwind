@@ -1,5 +1,5 @@
-import React, { ReactElement } from 'react';
+import { ReactNode } from 'react';
 
-const SEO = (): ReactElement => <></>;
+const SEO = (): ReactNode => <></>;
 
 export { SEO };
