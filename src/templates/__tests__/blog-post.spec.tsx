@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React, { PropsWithChildren } from 'react';
 import { render } from '@testing-library/react';
 
